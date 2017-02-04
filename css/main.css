@@ -1,0 +1,12 @@
+/**************
+General
+**************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, sans-serif;
+}
