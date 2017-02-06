@@ -10,3 +10,18 @@ General
 body {
   font-family: Georgia, sans-serif;
 }
+
+/**************
+.pageContainer
+**************/
+.pageContainer {
+  margin: 0 auto;
+  width: 75%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.pageHead {
+  margin-bottom: 10px;
+}
