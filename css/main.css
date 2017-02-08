@@ -36,7 +36,32 @@ ul {
   padding: 40px;
 }
 
+/**************
+.pageHead
+**************/
+.pageHead { margin-bottom: 0; }
+
 .pageHead h2 {
-  margin-bottom: 0;
   font-style: italic;
+  float: left;
+  margin: 0;
+}
+
+.pageHead .employeeSearch {
+  float: right;
+}
+
+.searchInput {
+  border-radius: 3px;
+  border: 2px solid #ccc;
+  padding: 7px 14px;
+  font-size: 1em;
+  font-family: Georgia, sans-serif;
+  -webkit-transition: .5s;
+  transition: .75s;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #9c39e0;
 }
