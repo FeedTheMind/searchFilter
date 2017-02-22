@@ -18,11 +18,18 @@ ul {
   list-style: none;
 }
 
-.cFix:after {
+.cFix:after,
+.cFix:before {
   content: '';
   display: table;
   height: 0;
   clear: both;
+}
+
+/* Prevents jumping content */
+h3 {
+  border: 3px solid transparent;
+  transition: 1s;
 }
 
 /**************
@@ -30,7 +37,6 @@ ul {
 **************/
 .pageContainer {
   margin: 40px auto;
-  width: 75%;
   background: #fff;
   border-radius: 8px;
   padding: 40px;
@@ -61,7 +67,57 @@ ul {
   transition: .75s;
 }
 
-.searchInput:focus {
+.searchInput:focus,
+.searchInput:hover {
   outline: none;
   border-color: #9c39e0;
+}
+
+/***************
+Media Queries
+***************/
+@media screen and (max-width: 450px) {
+  .searchInput {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .employeeDetails h3 {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .pageContainer {
+    width: 75%;
+  }
+  .employeeDetails h3 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .pageContainer {
+    width: 60%;
+  }
+  .employeeDetails h3 {
+    width: 30%;
+  }
+}
+
+/***************
+jQuery Class(es)
+***************/
+.matchedName {
+  border-bottom: 3px solid magenta;
+  background: purple;
+  color: #fff;
+  box-shadow: -1px 5px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+.changeInput {
+  color: #fff;
+  background-color: purple;
+  box-shadow: -1px 5px 5px 0 rgba(0, 0, 0, 0.75);
 }
